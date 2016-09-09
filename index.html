@@ -1,1 +1,259 @@
-<a href="basicHTML.html">test link</a>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First Webpage</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 200%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+            
+        footer{
+            background-color: bisque;
+            padding: 2%;
+            position:relative;
+        }  
+        body{
+            background-color: darkolivegreen;
+        } 
+            
+            
+            .column{
+                float: left;
+            }
+            .clear{
+                clear: both;
+            }
+            
+            .header_img{
+                width: 100%;
+            }
+            .footer_img{
+                position:absolute;
+                bottom:0;
+                right:0;
+                width: 40%;
+            }
+            .logo_type{
+                position: absolute;
+                top:-1.2%;
+                left:-8.5%;
+            }
+            
+            .figure_img{
+                width: 100%;
+            }
+            .main_figure{
+                width: 32.50478011472275%;
+                float: right;
+                margin: 2% 9.56022944550669% 2% 2%; 
+                padding: 2%;
+                background-color: antiquewhite;
+            }
+            
+            #main{
+                width: 56%;
+                padding: 2%;
+            }
+            #sidebar{
+                width: 36%;
+                padding: 2%;
+            }
+            #wrapper{
+                width:85%;
+                margin: 25px auto 0 auto;
+                background-color: antiquewhite;
+                position:relative;
+            }
+            #content_wrapper{
+                background-color: aquamarine;
+            }
+            
+            #feature{
+                width:  81.57575757575758%;/*706px/825px*/
+                background-color: chartreuse;
+                margin: 2% auto 4% auto;
+                padding: 2%;
+            }
+           
+            #feature img{
+                margin-right: 2%;
+            }
+            /*nav styles*/
+            nav li{
+                display: inline;
+                padding:0 0 0 2%;
+            }
+            nav{
+                background-color: bisque;
+            }
+            
+            nav ul{
+                width: 85.57575757575758%;
+                background-color: aquamarine;
+                margin: 0 auto;
+                padding:2% 0 2% 0;
+            }
+            
+            /*Type styles*/
+            h1, h2{
+                font-family: Overlock;
+            }
+            h1{
+               font-size: 2.625em; /*42px/16px*/
+            }
+            h2{
+                font-size: 2.125em; /*34px/16px*/
+            }
+            
+            nav a{
+                font-size: 1.125em;/*18px/16px*/
+                font-family:'PT Sans', sans-serif;
+            }
+            
+            small{
+                font-size: 0.875em;/*14px/16px*/
+            }
+            
+            p{
+                font-size: 1em;
+                font-family:'PT Sans', sans-serif;
+            }
+            
+            
+            /*whitespace*/
+            h2{
+                margin-bottom: 2%;
+            }
+            article{
+                margin-bottom: 2%;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <div class="logo_type"><img src="WebDesignLogo.png"></div>
+            <h1><img src="Galactus.png" class="header_img"></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="page2">Link to page 2</a>
+                <li><a href="page2">Link to page 2</a>
+                <li><a href="page2">Link to page 2</a>
+                <li><a href="page2">Link to page 2</a>                
+            </ul>
+        </nav>
+        
+            <div id="feature">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/The_Soft_Boys-Underwater_Moonlight_(album_cover).jpg" alt="Soft Boys Album: Unerwater Moonlight" class="column"/>
+                <h2>Feature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+  
+                </p>
+                <div class="clear"></div>
+            </div>
+ <div id="content_wrapper">           
+        <div class="column" id="main">
+        <article>
+            <h2>Subhead</h2>
+            <figure  class="main_figure">
+                <img src="http://ozbot.typepad.com/.a/6a00d8341c4e3753ef01538f42a535970b-450wi" class="figure_img"/>
+                <figcaption>pics!</figcaption>
+            </figure>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+        </article>
+        
+        <article>
+            <h2>Subhead</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+        </article>
+        </div><!--close main div-->
+        <div class="column" id="sidebar">
+        <article>
+            <h2>Subhead</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ipsum lorem. Phasellus eleifend eu metus ultricies feugiat. Proin lacinia ligula in venenatis rutrum. Sed dignissim diam nec imperdiet dignissim. Phasellus rutrum lobortis ante non gravida. Fusce varius euismod feugiat. Donec leo leo, tristique nec orci vitae, auctor gravida leo. Vestibulum nibh quam, luctus sit amet euismod posuere, consectetur id sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce in lorem semper, gravida sapien nec, sollicitudin mauris. Sed nec mollis nunc. Suspendisse eget fringilla lectus. Sed id euismod nulla, et pharetra urna. Fusce volutpat viverra magna, ac mattis neque eleifend et.
+            </p>
+        </article>
+        </div><!--close sidebar-->
+    
+        <footer class="clear">
+                <small>COPYRIGHT 2015 - GORRILL</small>
+            <img src="doom.png" class="footer_img"/>
+        </footer>
+     </div><!--close content_wrapper-->
+        </div><!--close wrapper-->
+    </body>
+</html>
